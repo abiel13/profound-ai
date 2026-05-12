@@ -8,7 +8,7 @@
 
 const API_BASE =
   process.env.REACT_APP_BACKEND_URL ||
-  "http://localhost:8000";
+  "https://profound-ai-production.up.railway.app";
 
 export const API = `${API_BASE}/api`;
 
