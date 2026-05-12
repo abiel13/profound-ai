@@ -1,0 +1,86 @@
+/* ProFund AI Custom Styles */
+
+/* Glass effect for sidebar and header */
+.glass-surface {
+  background: rgba(11, 12, 16, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Match score circle */
+.match-score-ring {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* AI glow effect */
+.ai-glow {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.15), 0 0 60px rgba(37, 99, 235, 0.05);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Card hover animation */
+.card-hover {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Status badges */
+.status-new { background: rgba(37, 99, 235, 0.15); color: #60A5FA; }
+.status-reviewing { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+.status-preparing { background: rgba(139, 92, 246, 0.15); color: #A78BFA; }
+.status-submitted { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+.status-rejected { background: rgba(239, 68, 68, 0.15); color: #F87171; }
+.status-approved { background: rgba(16, 185, 129, 0.25); color: #10B981; }
+
+/* Urgency indicators */
+.urgency-critical { color: #EF4444; }
+.urgency-high { color: #F59E0B; }
+.urgency-medium { color: #3B82F6; }
+.urgency-low { color: #10B981; }
+
+/* Skeleton loading animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton-loading {
+  background: linear-gradient(90deg, hsl(225 19% 8%) 25%, hsl(222 16% 14%) 50%, hsl(225 19% 8%) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Sidebar active link */
+.nav-link-active {
+  background: rgba(37, 99, 235, 0.1);
+  border-right: 2px solid #2563EB;
+  color: #F3F4F6;
+}
+.nav-link-active svg {
+  color: #2563EB;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* Login page background */
+.login-bg {
+  background-image: url('https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxibHVlJTIwZGF0YSUyMHZpc3VhbGl6YXRpb24lMjBhYnN0cmFjdHxlbnwwfHx8fDE3NzY0MDUyODJ8MA&ixlib=rb-4.1.0&q=85');
+  background-size: cover;
+  background-position: center;
+}
